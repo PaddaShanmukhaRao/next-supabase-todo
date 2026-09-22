@@ -13,6 +13,6 @@ function getEnvironmentVariables(){
 
 export default  function createClient(){
     const {supabaseUrl, supabasePublishableKey } = getEnvironmentVariables();
-    createBrowserClient(supabaseUrl,supabasePublishableKey);
+    return createBrowserClient(supabaseUrl,supabasePublishableKey);
 
 }
